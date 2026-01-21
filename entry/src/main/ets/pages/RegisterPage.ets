@@ -37,11 +37,9 @@ struct RegisterPage {
   @State ppassword: string = '123456'
 
   handleRegister() {
-
-
-    if (this.account.length !== 11) {
+    if (this.account.length === 0) {
       promptAction.showToast({
-        message: '账号应为11位数字'
+        message: '账号应为数字'
       })
       // 验证失败时隐藏加载圈
       this.isShowProgress = false
@@ -216,18 +214,7 @@ struct RegisterPage {
             offsetY: 10
           })
       }
-
-      // Button('注册', {
-      //   type: ButtonType.Capsule
-      // })
-      //   .width('90%')
-      //   .height(48)
-      //   .backgroundColor('#007DFF')
-      //   .borderRadius(16)
-      //   .margin({ top: 20 })
-      //   .onClick(() => {
-      //     this.handleRegister()
-      //   })
+      // 7. 注册胶囊按钮
       if (this.isShowProgress) {
         // 显示加载圈
         LoadingProgress()

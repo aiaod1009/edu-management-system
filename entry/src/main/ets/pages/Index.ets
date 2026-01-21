@@ -65,12 +65,16 @@ struct Index {
     }
     // 导航栏高度
     .barHeight(56)
+    .padding({top: 8})
     // 导航栏模式
     .barMode(BarMode.Fixed)
     .barBackgroundColor(Color.White)
     .onChange((index: number) => {
       this.currentIndex = index
     })
+    //也可以链式调用
+    // .vertical(false)
+    // .barPosition(BarPosition.End)
   }
 }
 
