@@ -84,7 +84,7 @@ struct LoginPage {
         })
       } else {
         // 3. 登陆成功处理
-        //显示加载动画
+        //显示加载动画1
         this.isShowProgress = true
 
         if (this.timeOutID === -1) {
@@ -99,7 +99,6 @@ struct LoginPage {
             this.getUIContext().getPromptAction().showToast({
               message: '登陆成功~欢迎您' + this.account
             })
-
             // 路由器跳转: 跳转至主页（Index页面）
             router.push({
               url: 'pages/Index'

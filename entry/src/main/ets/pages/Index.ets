@@ -2,16 +2,15 @@
 import { Home } from '../components/Home'
 //导入“我的“页面组件
 import { Mine } from '../components/Mine'
+import { router } from '@kit.ArkUI'
 
 @Entry
 @Component
 struct Index {
   // 当 currentIndex 发生改变时，可以切换到对应组件
   @State currentIndex: number = 0
-
   // TabsController: 实现导航项的切换
   private tabsController: TabsController = new TabsController()
-
   @Builder
   TabBuilder(title: string, index: number, normalImg: Resource, selectedImg: Resource) {
     // 使用 Column 布局，让图标和文字垂直排列
