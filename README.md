@@ -1,10 +1,6 @@
-教务管理系统（edu-management-system）
+## 教务管理系统（edu-management-system）
 基于 OpenHarmony 生态开发的轻量级教务管理鸿蒙应用，聚焦院校日常教务场景，提供课表管理、成绩查询、学生信息管理等核心功能，适配鸿蒙多设备部署特性，满足院校轻量化教务办公需求。
-项目简介
-本项目是面向院校的鸿蒙原生教务管理应用，基于 OpenHarmony API 规范开发，覆盖学生、教师、管理员三类角色的核心教务操作：
-学生端：课表查看、成绩查询、个人信息维护；
-教师端：课程信息发布、成绩录入；
-管理员端：学生 / 教师信息管理、权限配置。
+# 项目简介
 项目遵循鸿蒙应用开发规范，采用模块化、组件化设计，具备低耦合、易扩展、多设备适配的特点。
 技术栈
 开发框架：OpenHarmony（API Version 9/10，以 entry 模块实际配置为准）
@@ -28,9 +24,9 @@ cd edu-management-system
 项目依赖通过 Hvigor 工具自动安装，打开 DevEco Studio 后执行：
 bash
 运行
-# 项目根目录执行
+## 项目根目录执行
 hvigorw install
-# 或进入entry模块执行
+## 或进入entry模块执行
 cd entry
 hvigorw install
 3. 项目配置
@@ -38,7 +34,7 @@ hvigorw install
 检查entry/build-profile.json5：确认 API Version、编译模式（debug/release）、应用包名；
 核对entry/oh-package.json5：确认依赖版本与本地 SDK 匹配；
 配置模拟器 / 真机：连接 OpenHarmony 模拟器（API 9/10）或鸿蒙真机（开启开发者模式）。
-项目结构（核心目录）
+## 项目结构（核心目录）
 plaintext
 edu-management-system/
 ├── AppScope/                # 应用全局配置
